@@ -23,11 +23,11 @@ function App() {
     <div>
       <h1 style={{ textAlign: "center" }}>Todo List</h1>
       <TaskForm onSubmit={handleNewTask} />
-      <ol className="list-group list-group-numbered container">
+      <ul className="list-group container pt-3">
         {tasks.map((task, index) => (
           <Task key={index} task={task} />
         ))}
-      </ol>
+      </ul>
     </div>
   );
 }
